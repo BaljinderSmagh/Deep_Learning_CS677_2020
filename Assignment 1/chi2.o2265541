@@ -1,0 +1,5 @@
+Running on host: node430.
+In directory: /home/b/bks46/Assignment_1
+Starting on: Wed Apr 29 04:48:32 EDT 2020
+/usr/bin/time: cannot run ./dot_product: Permission denied
+sge_job_epilog: Removed left over scratch directory  {/scratch/2265541.1.datasci}
