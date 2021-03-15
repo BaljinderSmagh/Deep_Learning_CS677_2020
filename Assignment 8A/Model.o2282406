@@ -1,0 +1,21 @@
+Running on host: node429.
+In directory: /home/b/bks46/Assignment_8/Fruits
+Starting on: Fri May 15 15:52:44 EDT 2020
+2020-05-15 15:53:38.250008: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-05-15 15:53:38.394277: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:02:00.0
+totalMemory: 15.90GiB freeMemory: 15.64GiB
+2020-05-15 15:53:38.551799: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 1 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:81:00.0
+totalMemory: 15.90GiB freeMemory: 12.32GiB
+2020-05-15 15:53:38.551876: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0, 1
+2020-05-15 15:53:39.696587: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-15 15:53:39.696627: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 1 
+2020-05-15 15:53:39.696634: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N N 
+2020-05-15 15:53:39.696639: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N N 
+2020-05-15 15:53:39.698061: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15167 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:02:00.0, compute capability: 6.0)
+2020-05-15 15:53:39.917533: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 11940 MB memory) -> physical GPU (device: 1, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0)
+sge_job_epilog: Removed left over scratch directory  {/scratch/2282406.1.datasci/pymp-i3xmzyr5}
+sge_job_epilog: Removed left over scratch directory  {/scratch/2282406.1.datasci}

@@ -1,0 +1,31 @@
+Running on host: node412.
+In directory: /home/b/bks46/Assignment_8/Fruits
+Starting on: Mon May 11 14:29:20 EDT 2020
+2020-05-11 14:29:33.465091: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-05-11 14:29:34.680122: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:02:00.0
+totalMemory: 15.90GiB freeMemory: 15.64GiB
+2020-05-11 14:29:34.825069: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 1 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:82:00.0
+totalMemory: 15.90GiB freeMemory: 15.64GiB
+2020-05-11 14:29:34.825174: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0, 1
+2020-05-11 14:29:43.121702: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-11 14:29:43.124296: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 1 
+2020-05-11 14:29:43.124335: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N N 
+2020-05-11 14:29:43.124389: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N N 
+2020-05-11 14:29:43.149610: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15167 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:02:00.0, compute capability: 6.0)
+2020-05-11 14:29:43.341787: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 15167 MB memory) -> physical GPU (device: 1, name: Tesla P100-PCIE-16GB, pci bus id: 0000:82:00.0, compute capability: 6.0)
+/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "train.py", line 58, in <module>
+    subset='training')
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/preprocessing/image.py", line 775, in flow_from_directory
+    interpolation=interpolation)
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/preprocessing/image.py", line 1392, in __init__
+    for subdir in sorted(os.listdir(directory)):
+FileNotFoundError: [Errno 2] No such file or directory: 'fruits-360/Training'
+sge_job_epilog: Removed left over scratch directory  {/scratch/2280256.1.datasci}

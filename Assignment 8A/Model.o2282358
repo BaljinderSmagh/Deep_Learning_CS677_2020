@@ -1,0 +1,25 @@
+Running on host: node429.
+In directory: /home/b/bks46/Assignment_8/Fruits
+Starting on: Fri May 15 14:30:08 EDT 2020
+2020-05-15 14:31:06.647892: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-05-15 14:31:07.202400: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:02:00.0
+totalMemory: 15.90GiB freeMemory: 15.64GiB
+2020-05-15 14:31:07.354421: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 1 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:81:00.0
+totalMemory: 15.90GiB freeMemory: 12.32GiB
+2020-05-15 14:31:07.354517: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0, 1
+2020-05-15 14:32:19.971913: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-15 14:32:19.972312: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 1 
+2020-05-15 14:32:19.972324: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N N 
+2020-05-15 14:32:19.972328: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 1:   N N 
+2020-05-15 14:32:20.199489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15167 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:02:00.0, compute capability: 6.0)
+2020-05-15 14:32:20.794430: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 11940 MB memory) -> physical GPU (device: 1, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0)
+/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/callbacks.py:120: UserWarning: Method on_batch_end() is slow compared to the batch update (0.152710). Check your callbacks.
+  % delta_t_median)
+sge_job_epilog: Removed left over scratch directory  {/scratch/2282358.1.datasci}

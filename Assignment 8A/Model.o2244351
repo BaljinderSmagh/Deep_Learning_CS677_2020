@@ -1,0 +1,37 @@
+Running on host: node413.
+In directory: /home/b/bks46/Assignment_8/Fruits
+Starting on: Mon Apr 13 05:44:05 EDT 2020
+/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/h5py/__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "test.py", line 28, in <module>
+    model = load_model(sys.argv[2])
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/models.py", line 270, in load_model
+    model = model_from_config(model_config, custom_objects=custom_objects)
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/models.py", line 347, in model_from_config
+    return layer_module.deserialize(config, custom_objects=custom_objects)
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/layers/__init__.py", line 55, in deserialize
+    printable_module_name='layer')
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/utils/generic_utils.py", line 144, in deserialize_keras_object
+    list(custom_objects.items())))
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/engine/topology.py", line 2525, in from_config
+    process_layer(layer_data)
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/engine/topology.py", line 2511, in process_layer
+    custom_objects=custom_objects)
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/layers/__init__.py", line 55, in deserialize
+    printable_module_name='layer')
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/utils/generic_utils.py", line 146, in deserialize_keras_object
+    return cls.from_config(config['config'])
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/engine/topology.py", line 1271, in from_config
+    return cls(**config)
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/layers/core.py", line 301, in __init__
+    self.activation = activations.get(activation)
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/activations.py", line 107, in get
+    return deserialize(identifier)
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/activations.py", line 99, in deserialize
+    printable_module_name='activation function')
+  File "/afs/cad/linux/anaconda3.6/anaconda/lib/python3.6/site-packages/keras/utils/generic_utils.py", line 164, in deserialize_keras_object
+    ':' + function_name)
+ValueError: Unknown activation function:relu6
+sge_job_epilog: Removed left over scratch directory  {/scratch/2244351.1.datasci}
