@@ -73,3 +73,16 @@ adversaries.
 A successful attack should have a classification accuracy of at most 10%
 on the test.
 
+# Assignment 11: Word2Vec
+
+Learn a word2vec model from fake news dataset and a real news dataset. We 
+will use the word2vec model implemented in the Python Gensim library. Now 
+we have two sets of word representations learnt from different datasets. 
+
+Output the top 5 most similar words to the following ones from each 
+representation.
+
+1. Hillary
+2. Trump
+3. Obama
+4. Immigration
