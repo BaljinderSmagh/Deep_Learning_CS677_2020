@@ -1,4 +1,5 @@
 # Assignment 1
+
 Write a CUDA program for computing the dot product of a vector in parallel with 
 each row of a matrix. You are required to have each thread access consecutive
 memory locations (coalescent memory access). The inputs are 
@@ -27,55 +28,48 @@ then your program should output
 Compute the dot products in parallel your kernel function. You will have to
 transpose the data matrix in order to get coalescent memory access. 
 
-# Assigment 2
-Convert the CUDA program written in assignment one into an
-OpenMP one. The output of both your CUDA and OpenML programs must be the same. 
+# Assignment 6: CNN
 
-# Assignment 3
-Write a Python program that trains a single layer neural network
-with sigmoid activation. You may use numpy. Your input is in dense 
-liblinear format which means you exclude the dimension and include 0's. 
+Write a convolutional network in Keras to train the Mini-ImageNet 
+dataset on the course website. Your constraint is to create a network
+that achieves at least 80% test accuracy (in order to get full points).
 
-Let your program command line be:
+# Assignment 7: Transfer Learning
 
-python single_layer_nn.py <train> <test> <n>
+Write a convolutional network in Keras to train the Mini-ImageNet 
+dataset on the course website. You may use transfer learning. Your
+goal is to achieve above 90% accuracy on the test/validation datasets.
 
-where n is the number of nodes in the single hidden layer.
+# Assignment 8: Image Classification
 
-For this assignment you basically have to implement gradient
-descent. Use the update equations we derived on our google document
-shared with the class.
+Classify images in the three Kaggle datasets Flwoers, Fruits, Chest X-rays 
+with convolutional networks. You may use transfer learning. Your
+goal is to achieve above 85% accuracy on the test/validation datasets.
 
-Test your program on the XOR dataset:
+# Assignment 9: MNIST GAN
 
-1 0 0
-1 1 1
--1 0 1
--1 1 0
+Implement a simple GAN in Keras to generate MNIST images. Use the GAN given here
 
-1. Does your network reach 0 training error? 
+https://medium.com/ai-society/gans-from-scratch-1-a-deep-introduction-with-code-in-pytorch-and-tensorflow-cb03cdcdba0f
 
-2. Can you make your program into stochastic gradient descent (SGD)?
+as your discriminator and generator. 
 
-3. Does SGD give lower test error than full gradient descent?
+You want to train the generator to produce images of numbers between 0 and 9.
 
+# Assignment 10: Black-box adversial attack
 
-# Assignment 4
+Implement a simple black box attack in Keras to attack a pretrained 
+ResNet18 model from Keras. For the substitute model we use a two hidden 
+layer neural network with each layer having 100 nodes.
 
-Implement stochastic gradient descent in your back propagation program
-in assignment 3. We will do the mini-batch SGD search. 
+Our goal is to generate adversaries to decieve a simple single layer 
+neural network with 20 hidden nodes into misclassifying data from a 
+test set that is provided by us. This test set consists of examples 
+from classes 0 and 1 from CIFAR10. 
 
-I. Mini-batch SGD algorithm:
+Your target model should have at least 85% accuracy on the test set without
+adversaries. 
 
-Initialize random weights
-for(k = 0 to n_epochs):
-	Shuffle the rows (or row indices)
-	for j = 0 to rows-1:
-		Select the first k datapoints where k is the mini-batch size
-		Determine gradient using just the selected k datapoints
-		Update weights with gradient
-	Recalculate objective
+A successful attack should have a classification accuracy of at most 10%
+on the test.
 
-Your input, output, and command line parameters are the same as assignment 3.
-We take the batch size k as input. We leave the offset for the final layer 
-to be zero at this time.
